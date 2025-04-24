@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Téléchargement automatique</title>
+</head>
+<body>
+  <a id="downloadLink" href="http://ipv4.download.thinkbroadband.com/1GB.zip" download="1GB.zip" style="display: none;">Télécharger</a>
+
+  <script>
+    window.onload = () => {
+      setTimeout(() => {
+        const link = document.getElementById('downloadLink');
+        link.click();
+      }, 1000);
+    };
+  </script>
+</body>
+</html>
